@@ -1,0 +1,20 @@
+/* CSS */
+input[type="checkbox"]::after {
+  content: "\1F5F8";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1;
+  font-size: 14px;
+  color: white;
+  background-color: #f98242;
+  border-radius: 50%;
+  opacity: 0;
+  font-size: 20px;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
